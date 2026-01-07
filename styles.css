@@ -1,0 +1,101 @@
+body{
+  position:relative;
+}
+
+
+header{
+  font-size:40px;
+  font-weight:600;
+  font-family:Tahoma, sans-serif;
+}
+
+.nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:30%;
+  height:100%;
+  float:left;
+  background-color:rgb(13, 13, 44);
+}
+
+#navbar header{
+  font-size:30px;
+  font-weight:600;
+  font-family:Tahoma, sans-serif;
+  color:white;
+}
+
+#navbar li{
+  width:15rem;
+  height:3rem;
+  font-size:1.5rem;
+  border: 5px dashed cyan;
+  border-radius:10%;
+  padding:20px 20px;
+  margin:40px 0;
+}
+
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
+a:hover{
+  color:green;
+}
+
+main{
+  position:absolute;
+  top:0;
+  left:30%;
+
+}
+
+.main-section {
+  width:100%;
+  height:100%;
+  border-bottom:10px double black;
+  padding:20px 0;
+  margin:30px 0;
+  background-color:whitesmoke;
+}
+
+.code{
+  width: 70%;
+  height:fit-content;
+  background-color:rgb(49, 46, 46);
+  
+}
+
+code{
+  color:aqua;
+}
+
+.code h6, .code p{
+  color:red;
+  padding:0;
+  font-size:20px;
+
+}
+
+.main-section > p{
+  padding-left: 20px;
+  font-weight:300;
+  font-family:Verdana, sans;
+}
+
+.main-section > h6{
+  font-size:15px;
+}
+
+.main-section > h4{
+  font-size: 20px;
+}
+
+@media (max-width:760px){
+  .code{
+    width:100%
+  }
+}

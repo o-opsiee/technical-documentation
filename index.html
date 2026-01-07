@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+
+  <body>
+    <main id='main-doc'>
+      <section class='main-section' id='Python_Introduction'>
+        <header>Python Introduction</header>
+        <p>Python was created in 1991 with a focus on code readability and its ability to express concepts in fewer lines of code.</p>
+        <ul>
+          <li>Variable types are determined automatically at runtime, simplifying code writing.</li>
+          <li>Supports multiple programming paradigms, including object-oriented, functional and procedural programming.</li>
+        </ul>
+        <h4>Understanding Hello World Program in Python</h4>
+        <p>The following is a simple program that displays the message “Hello, World!” on the screen</p>
+        <div class='code'>
+          <code># This is a comment. It will not be executed.<br>
+          print("Hello, World!")</code>
+          <h6>Output:</h6>
+          <code>Hello, World!</code>
+        </div>
+        <h6>How does this work:</h6>
+        <ul>
+          <li>print() is a built-in Python function that instructs the computer to display text on the screen.</li>
+          <li>"Hello, World!" is a string, which is a sequence of text. In Python, strings are enclosed in quotes (either single ' or double ").</li>
+          <li>Anything after a # symbol is a comment. Python ignores comments, but they are useful for explaining code to human readers.</li>
+        </ul>
+        <h4>Indentation in Python</h4>
+        <p>In Python, Indentation is used to define blocks of code. It tells the Python interpreter that a group of statements belongs to a specific block. All statements with the same level of indentation are considered part of the same block. Indentation is achieved using whitespace (spaces or tabs) at the beginning of each line. The most common convention is to use 4 spaces or a tab, per level of indentation.</p>
+        <div class='code'>
+          <code>print("I have no Indentation ")<br>
+          <span class='pad'>print("I have tab Indentation ")</span>
+          </code>
+          <h6>Output:</h6>
+          <code>ERROR!<br>
+            Traceback (most recent call last):<br>
+            File "main.py", line 2<br>
+           print("I have tab Indentation ")<br>
+           IndentationError: unexpected indent
+          </code>
+        </div>
+        <h6>Explanation:</h6>
+        <ul>
+          <li>first print statement has no indentation, so it is correctly executed.</li>
+          <li>second print statement has tab indentation, but it doesn't belong to a new block of code. Python expects the indentation level to be consistent within the same block. This inconsistency causes an IndentationError.</li>
+        </ul>
+      </section>
+      <section class='main-section' id='Input_and_Output_in_Python'>
+        <header>Input and Output in Python</header>
+        <p>Understanding input and output operations is fundamental to Python programming. With the print() function, we can display output in various formats, while the input() function enables interaction with users by gathering input during program execution.</p>
+        <h4>Taking input in Python</h4>
+        <p>Python's input() function is used to take user input. By default, it returns the user input in form of a string.</p>
+        <div class='code'>
+          <code>name = input("Enter your name: ") <br>
+          print("Hello,", name, "! Welcome!")</code>
+          <h6>Output:</h6>
+          <code>Enter your name: GeeksforGeeks <br>
+          Hello, GeeksforGeeks ! Welcome!</code>
+        </div>
+        <p>The code prompts the user to input their name, stores it in the variable "name" and then prints a greeting message addressing the user by their entered name.</p>
+        <h4>Printing Output using print() in Python</h4>
+        <p>At its core, printing output in Python is straightforward, thanks to the print() function. This function allows us to display text, variables and expressions on the console. Let's begin with the basic usage of the print() function:</p>
+        <p>In this example, "Hello, World!" is a string literal enclosed within double quotes. When executed, this statement will output the text to the console.</p>
+        <div class='code'>
+          <code>print("Hello, World!")</code>
+          <h6>Output:</h6>
+          <code>Hello, World!</code>
+        </div>
+        <h5>Printing Variables</h5>
+        <p>We can use the print() function to print single and multiple variables. We can print multiple variables by separating them with commas.</p>
+        <div class='code'>
+          <code># Single variable<br>
+          s = "Bob"<br>
+          print(s)<br>
+
+          # Multiple Variables<br>
+          s = "Alice"<br>
+          age = 25<br>
+          city = "New York"<br>
+          print(s, age, city)<br></code>
+          <h6>Output:</h6>
+          <code>Bob<br>
+          Alice 25 New York</code>
+        </div>
+        <h5>Find DataType of Input in Python</h5>
+        <p>In the given example, we are printing the type of variable x. We will determine the type of an object in Python.</p>
+        <div class='code'>
+          <code>
+          a = "Hello World"<br>
+          b = 10<br>
+          c = 11.22<br>
+          d = ("Geeks", "for", "Geeks")<br>
+          e = ["Geeks", "for", "Geeks"]<br>
+          f = {"Geeks": 1, "for":2, "Geeks":3}<br>
+
+
+          print(type(a))<br>
+          print(type(b))<br>
+          print(type(c))<br>
+          print(type(d))<br>
+          print(type(e))<br>
+          print(type(f))<br>
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Variables'>
+        <header>Variables</header>
+        <p>In Python, variables are used to store data that can be referenced and manipulated during program execution. A variable is essentially a name that is assigned to a value.</p>
+        <ul>
+          <li>Unlike Java and many other languages, Python variables do not require explicit declaration of type.</li>
+          <li>The type of the variable is inferred based on the value assigned.</li>
+        </ul>
+        <div class='code'>
+          <code># Variable 'x' stores the integer value 5<br>
+          x = 5<br>
+
+          # Variable 'name' stores the string "Samantha"<br>
+          name = "Samantha"  <br>
+
+          print(x)<br>
+          print(name)</code>
+          <h6>Output:</h6>
+          <code>
+          5<br>
+          Samantha</code>
+        </div>
+        <h4>Rules for Naming Variables</h4>
+        <ul>
+          <li>Variable names can only contain letters, digits and underscores (_).</li>
+          <li>A variable name cannot start with a digit.</li>
+          <li>Variable names are case-sensitive (myVar and myvar are different).</li>
+          <li>Avoid using Python keywords (e.g., if, else, for) as variable names.</li>
+        </ul>
+      </section>
+      <section class='main-section' id='Operators'>
+        <header>Operators</header>
+        <p>In Python programming, Operators in general are used to perform operations on values and variables.</p>
+        <ul>
+          <li><span class='bold'>Operators:</span> Special symbols like -, + , * , /, etc.</li>
+          <li><span class='bold'>Operands:</span> Value on which the operator is applied.</p>
+        </ul>
+        <h5>Arithmetic Operators</h5>
+        <p>Python Arithmetic operators are used to perform basic mathematical operations like addition, subtraction, multiplication and division.</p>
+        <div class='code'>
+          <code>
+          # Variables<br>
+          a = 15<br>
+          b = 4<br>
+
+          # Addition<br>           
+          print("Addition:", a + b)<br>  
+
+          # Subtraction<br>              
+          print("Subtraction:", a - b)<br>
+
+          # Multiplication<br>              
+          print("Multiplication:", a * b)  <br>
+
+          # Division<br>           
+          print("Division:", a / b)<br> 
+
+          # Floor Division<br>              
+          print("Floor Division:", a // b)  <br>
+
+          # Modulus<br>              
+          print("Modulus:", a % b) <br>
+                            
+          # Exponentiation<br>                 
+          print("Exponentiation:", a ** b)<br>
+          </code>
+          <h6>Output:</h6>
+          <code>
+          Addition: 19<br>
+          Subtraction: 11<br>
+          Multiplication: 60<br>
+          Division: 3.75<br>
+          Floor Division: 3<br>
+          Modulus: 3<br>        
+          Exponentiation: 50625<br>
+          </code>
+        </div>
+        <h5>Comparison Operators</h5>
+        <p>In Python, Comparison (or Relational) operators compares values. It either returns True or False according to the condition.</p>
+        <div class='code'>
+          <code>
+          a = 13<br>
+          b = 33<br>
+
+          print(a > b)<br>
+          print(a < b)<br>
+          print(a == b)<br>
+          print(a != b)<br>
+          print(a >= b)<br>
+          print(a <= b)<br>
+          </code>
+          <h6>Output:</h6>
+          <code>
+          False<br>
+          True<br>
+          False<br>
+          True<br>
+          False<br>
+          True<br>
+          </code>
+        </div>
+        <h5>Logical Operator</h5>
+        <p>Python Logical operators perform Logical AND, Logical OR and Logical NOT operations. It is used to combine conditional statements.</p>
+        <p>The precedence of Logical Operators in Python is as follows:</p>
+        <ol>
+          <li>logical not</li>
+          <li>logical and</li>
+          <li>logical or</li>
+        </ol>
+        <div class='code'>
+          <code>a = True<br>
+          b = False<br>  
+          print(a and b)<br>
+          print(a or b)<br>
+          print(not a)<br>
+          </code>
+          <h6>Output:</h6>
+          <code>False<br>
+          True<br>
+          False<br></code>
+        </div>
+
+
+          
+      </section>
+      <section class='main-section' id='Functions'>
+        <header>Functions</header>
+        <p>Python Functions are a block of statements that does a specific task. The idea is to put some commonly or repeatedly done task together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.</p>
+        <h5>Defining a Function</h5>
+        <p>We can define a function in Python, using the def keyword. A function might take input in the form of parameters.</p>
+        <div class='code'>
+          <p>The syntax to declare a function is:</p>
+          <code> def function_name(parameters):<br>
+          <span class='pad'># statement<br> return expression</span>
+          </code>
+        </div>
+        <h5>Calling a Function</h5>
+        <p>After creating a function in Python we can call it by using the name of the functions followed by parenthesis containing parameters of that particular function.</p>
+        <div class='code'>
+          <code>def fun():<br>
+          print("Welcome to GFG")<br>
+          
+          fun() # Driver code to call a function<br></code>
+          <h6>Output:</h6>
+          <code>Welcome to GFG<br></code>
+        </div>
+      </section>
+    </main>
+    <div class='nav'>
+      <nav id='navbar'>
+        <header>Python Basic Documentation</header>
+        <ul>
+          <li>
+            <a class='nav-link' href='#Python_Introduction'>Python Introduction</a>
+          </li>
+          <li>
+            <a class='nav-link' href='#Input_and_Output_in_Python'>Input and Output in Python</a>
+          </li>
+          <li>
+            <a class='nav-link' href='#Variables'>Variables</a>
+          </li>
+          <li>
+            <a class='nav-link' href='#Operators'>Operators</a>
+          </li>
+          <li>
+            <a class='nav-link' href='#Functions'>Functions</a>
+          </li>
+      </nav>
+    </div>
+
+
+  </body>
+</html>
